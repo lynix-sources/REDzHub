@@ -1,46 +1,45 @@
 -- Carregando a biblioteca RedzLib V4
-local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/wx-sources/RedzLibV4/main/Source.lua"))()
+local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/lynix-sources/RedzLibV4/refs/heads/main/Source.lua"))()
 
 -- Criando a janela
 local Window = Library:MakeWindow({
-  Title = "REDz HUB : BROOKHAVEN versao crackeada",
-  SubTitle = "CRACKEADO",
-  LoadText = "CRACKEADO",
+  Title = "REDz HUB : BROOKHAVEN",
+  SubTitle = "By: redz9999",
+  LoadText = "REDz HUB v3.5",
   Flags = "redz Hub | Example.lua"
 })
 
 -- Definindo o tema
-Library:SetTheme("Default")  -- Troque pelo nome do tema desejado
-Library:SetTransparency(0.1)  -- Definindo transparência (0 a 1)
+Library:SetTransparency(0)  -- Definindo transparência (0 a 1)
 
 -- Criando uma notificação
 local Notify = Library:MakeNotify({
-  Title = "CRACKEADO",
-  Text = "Avatar copiado com sucesso, agora você pode fazer tudo normalmente",
+  Title = "Notification",
+  Text = "Text",
   Time = 5  -- Duração da notificação em segundos
 })
 
 -- Criando uma aba
 local Tab = Window:MakeTab({
-  Name = "CRACKEADO",
+  Name = "Functions",
   Icon = "Settings"  -- Ícone para a aba
 })
 
 -- Criando uma seção dentro da aba
-local Section = Tab:AddSection({"AVAtaR copiADo com suCeco"})
+local Section = Tab:AddSection({"Section"})
 
 -- Criando um parágrafo dentro da aba
-local Paragraph = Tab:AddParagraph({"Tex lo", "Funcao Em Beta Use com cudaido"})
+local Paragraph = Tab:AddParagraph({"Title", "Description"})
 
 -- Criando um rótulo de texto
-local TextLabel = Tab:AddLabel({"CRACKEADO"})
+local TextLabel = Tab:AddLabel({"TextLabel"})
 
 -- Criando um rótulo de imagem
-local ImageLabel = Tab:AddLabel({"CRACKEADO PELOS MASTERS", "CRACKEADO", "rbxassetid://1234567890"})  -- Troque pelo ID real da imagem
+local ImageLabel = Tab:AddLabel({"Imagem Label", "Description", "rbxassetid://1234567890"})  -- Troque pelo ID real da imagem
 
 -- Criando um botão
 local Button = Tab:AddButton({
-  Name = "Matar Jogador CRACKEADO",
+  Name = "Teste Button",
   Callback = function()
     print("Botão clicado!")
     Library:MakeNotify({
@@ -53,7 +52,7 @@ local Button = Tab:AddButton({
 
 -- Criando um toggle (caixa de seleção)
 local Toggle = Tab:AddToggle({
-  Name = "fliNG joGador CRACKEADO",
+  Name = "Teste Toggle",
   Default = false,
   Callback = function(Value)
     if Value then
